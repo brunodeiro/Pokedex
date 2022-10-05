@@ -1,18 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>PokeDex</title>
-  <link rel="stylesheet" href="./style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
-</head>
-<body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <script defer src="./js/script.js"></script>
+        <link rel="icon" href="./favicons/favicon-16x16.png">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Pokédex</title>
+    </head>
 
-  <div class="container">
-    <h1>Pokedex</h1>
-    <ul data-js="pokedex" class="pokedex"></ul>
-  </div>
-  
-  <script src="./app.js"></script>
-</body>
+    <body>
+        
+        <main>
+
+            <img src="#" class="pokemon_image" alt="pokemon">
+            <img src="./images/pokedex.png" class="pokedex" alt="pokedex">
+
+            <h1 class="pokemon_data">
+                <span class="pokemon_number"></span> - 
+                <span class="pokemon_name"></span>
+            </h1>
+
+            <span class="pokemon_type_0"></span>  
+            <span class="pokemon_type_1"></span>
+            
+            
+            <form class="form">
+                <input type="search" class="input_search" placeholder="Nome ou Número" required/>
+            </form>
+
+            <div class="buttons">
+                <button class="button btn-prev">&lt; Anterior  </button>
+                <button class="button btn-next">Próximo &gt; </button>
+            </div>
+
+            <input type="button" class="btn-shiny" value="Shiny: OFF"></button>
+
+        </main>
+        
+    </body>
 </html>

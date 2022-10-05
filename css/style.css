@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    min-height: 100vh;
+}
+
+main {
+    margin-top: 2%;
+    display: inline-block;
+    padding: 15px;
+    position: relative;
+}
+
+.pokedex {
+    width: 100%;
+    max-width: 425px;
+}
+
+.pokemon_image {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+    height: 18%;
+}
+
+
+.pokemon_data {
+    position: absolute;
+    font-weight: 600;
+    color: #53595e;
+    top: 54.5%;
+    right: 27%;
+    font-size: clamp(6px, 4vw, 20px); /* define o tamanho minimo, desejavel e maximo da fonte*/
+}
+
+.pokemon_name {
+    color: #3a444d;
+    text-transform: capitalize; /*apenas a primeira letra fica em maiuscula*/ 
+}
+
+.form {
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13.5%;
+  }
+
+.input_search {
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px, solid, #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 6px 0 #888, -5px 7px 0 #333;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0); /*Modificar posição da imagem (x e y)*/
+    display: flex;
+    gap: 20px;
+}
+
+
+.button {
+    width: 50%;
+    padding: 4%;
+    border: 2px, solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: rgb(16, 72, 156);
+    box-shadow: -2px 4px 0 rgb(48, 52, 80), -4px 6px 0 rgb(5, 5, 5);
+}
+
+.button:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
+
+.btn-shiny {
+    position: absolute;
+    background-color: #1960bd;
+    box-shadow: -2px 4px 0 rgb(48, 52, 80), -4px 6px 0 rgb(5, 5, 5);
+    padding: 1.5%;
+    border: 2px, solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    left: 59%;
+    top: 15.5%;
+    height: 5%;
+}
+
+.btn-shiny:active{
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+.pokemon_type_0 {
+    color: #3a444d;
+    text-transform: capitalize; /*apenas a primeira letra fica em maiuscula*/ 
+    position: absolute;
+    font-weight: 600;
+    top: 23%;
+    left: 22%;
+    font-size: clamp(6px, 4vw, 20px); 
+}
+
+.pokemon_type_1 {
+    color: #3a444d;
+    text-transform: capitalize; /*apenas a primeira letra fica em maiuscula*/ 
+    position: absolute;
+    font-weight: 600;
+    top: 23%;
+    left: 55%;
+    font-size: clamp(6px, 4vw, 20px); 
+}
